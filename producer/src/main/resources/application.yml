@@ -1,0 +1,21 @@
+spring:
+  application:
+    name: producer-server
+
+server:
+  port: 9005
+  servlet:
+    context-path: /producer
+
+logging:
+  level:
+    root: INFO
+
+feign:
+  client:
+    config:
+      default:
+        connectTimeout: 5000
+        readTimeout: 5000
+        loggerLevel: basic
+        follow-redirects: false

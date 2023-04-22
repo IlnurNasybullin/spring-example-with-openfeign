@@ -1,0 +1,4 @@
+rootProject.name = 'spring-example-with-openfeign'
+include 'consumer'
+include 'producer'
+
